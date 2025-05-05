@@ -1,20 +1,15 @@
-
 <?php
-// الاتصال بقاعدة البيانات
-$servername = "localhost";  // تغيير إلى اسم السيرفر
-$username = "root";         // تغيير إلى اسم المستخدم
-$password = "";             // تغيير إلى كلمة المرور
-$dbname = "feedback_db";    // تغيير إلى اسم قاعدة البيانات
+$servername = "localhost";
+$username = "root"; 
+$password = "";        
+$dbname = "feedback_db";
 
-// إنشاء الاتصال
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// التحقق من الاتصال
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// استلام البيانات المرسلة من النموذج
 $student_name = $_POST['student_name'];
 $course = $_POST['course'];
 $feedback = $_POST['feedback'];
@@ -31,4 +26,3 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-    
