@@ -1,0 +1,82 @@
+/* تنسيق النموذج */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bfd7e2; /* خلفية الصفحة باللون الأزرق الفاتح */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #a3c2db; /* خلفية بيضاء للنموذج */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin: 10px;
+}
+
+h1 {
+    color: #2a506b; /* لون أزرق داكن لعناوين الصفحة */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #2a506b; /* نفس اللون الأزرق الداكن للخطوط */
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c2d9e1; /* حدود بلون أزرق فاتح */
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #333;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button.submit-btn {
+    background-color: #4c8fd5; /* لون أزرق دافئ للزر */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+    background-color: #3b76b2; /* لون أزرق داكن عند hover */
+}
+
+button.submit-btn:active {
+    background-color: #2e5a8d; /* لون أزرق داكن عند الضغط */
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
